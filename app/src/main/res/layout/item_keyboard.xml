@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:columnCount="4"
+    android:elevation="20dp"
+    android:orientation="horizontal">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        app:layout_constraintVertical_weight="3"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_percent"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="%"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="CE"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_clear_all"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="C"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/btn_backspace"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <Button
+            android:id="@+id/btn_left_bracket"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="("
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_right_bracket"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text=")"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_pi"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="π"
+            android:textAllCaps="false"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/key_exp"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="e"
+            android:textAllCaps="false"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/btn_hyper"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="1/x"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_power"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:scaleType="center"
+            android:text="x²"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/btn_root"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_square_root_mathematical_symbol"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            style="@style/KeyThemeAction2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="/"
+            android:textSize="24sp" />
+
+    </GridLayout>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_700"
+        android:columnCount="3"
+        android:elevation="@dimen/keyboard_elevation"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_weight="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight=".75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <Button
+            android:id="@+id/key_7"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="7"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_8"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="8"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_9"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="9"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_4"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="4"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_5"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="5"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_6"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="6"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_1"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_2"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="2"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_3"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="3"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_negative"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="-/+"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/key_0"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="0"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            style="@style/KeyThemeMain"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text=","
+            android:textSize="24sp" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_500"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight=".25"
+        app:layout_constraintStart_toEndOf="@+id/gridLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <Button
+            android:id="@+id/btn_multiple"
+            style="@style/KeyThemeAction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="*"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:id="@+id/btn_minus"
+            style="@style/KeyThemeAction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="-"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:id="@+id/btn_plus"
+            style="@style/KeyThemeAction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="+"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:id="@+id/btn_equals"
+            style="@style/KeyThemeAction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="="
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

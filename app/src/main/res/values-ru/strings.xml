@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Own Calculator</string>
+    <string name="input_fail_message">Неверный ввод</string>
+    <string name="calculate_fail">Не удалось вычислить значение</string>
+    <string name="pi">Pi</string>
+    <string name="e">e</string>
+</resources>

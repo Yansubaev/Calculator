@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Own Calculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="input_fail_message">Invalid input</string>
+    <string name="calculate_fail">Failed to calculate value</string>
+    <string name="pi">Pi</string>
+    <string name="e">e</string>
+</resources>
